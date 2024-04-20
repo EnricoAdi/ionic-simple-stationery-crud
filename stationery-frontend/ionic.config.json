@@ -1,0 +1,7 @@
+{
+  "name": "stationery",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

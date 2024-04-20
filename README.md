@@ -1,15 +1,15 @@
 This repository contains a CRUD (Create, Read, Update, Delete) stationery management system built with a combination of frontend and backend technologies.
 
-Project Structure
+<h3>Project Structure</h3>
 The project is divided into two main parts:
 
 Frontend: Built with Ionic and React to provide a user-friendly interface for managing stationery items, optimized for mobile view.
 Backend: Built with ExpressJS and MongoDB to handle data persistence and API functionalities.
 
-Prerequisites
+<h3>Prerequisites</h3>
 Before running this application, you will need to run the ```npm install``` command to install each dependencies
 
-Usage
+<h3>Usage</h3>
 Once the application is running, you can access the frontend interface and manage your stationery items. The functionalities should include:
 <ul>
 <li>Viewing a list of existing stationery items </li> <br/>

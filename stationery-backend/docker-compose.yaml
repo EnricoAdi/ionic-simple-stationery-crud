@@ -1,0 +1,35 @@
+version: "2.32.4"
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    networks:
+      - stationery-crud-network
+    volumes:
+      - mongo-data:/data/db
+  stationery-backend:
+    container_name: stationery-backend
+    image: stationery-backend
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongo
+    environment:
+      - DATABASE_HOST=mongo
+      - DATABASE_SCHEMA=simple-stationery-crud
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=password
+      - DATABASE_PORT=27017
+    networks:
+      - stationery-crud-network
+networks:
+  stationery-crud-network:
+    name: stationery-crud-network
+volumes:
+  mongo-data:
+#docker-compose up -d

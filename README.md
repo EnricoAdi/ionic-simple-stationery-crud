@@ -20,3 +20,11 @@ Once the application is running, you can access the frontend interface and manag
 <img src="https://github.com/EnricoAdi/ionic-simple-stationery-crud/blob/master/docs/edit.png" width=250/><br/>
 <li>Deleting stationery items </li>
 </ul>
+
+
+<h3>Deployment With Kubernetes</h3>
+For development, dont forget to register the domain
+127.0.0.1 stationery-backend.enrico.local
+
+For debugging mongodb service (execute shell inside the mongo pod)
+kubectl exec -it mongodb-0 -- mongosh "mongodb://root:password@mongodb-0.mongodb:27017/?authSource=admin"

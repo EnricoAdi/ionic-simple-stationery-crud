@@ -47,7 +47,7 @@ const Home = () => {
       <IonButtons slot='end'>
         <IonButton routerLink='/add'><IonIcon slot="icon-only" icon={add}></IonIcon></IonButton> 
       </IonButtons>
-    }/>
+    }/> 
     <IonContent className='ion-padding'>  
     {items.length>0 && <>
       <IonList>
